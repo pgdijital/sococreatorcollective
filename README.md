@@ -45,8 +45,10 @@ GitHub Pages. One-time setup in the GitHub repo:
 1. **Settings → Pages → Build and deployment → Source**: choose **GitHub Actions**.
 2. Push to `main` (or run the workflow manually from the Actions tab).
 
-The workflow sets the base path to `/<repo-name>/` automatically, and deep links
-like `/creators` work via a `404.html` single-page-app fallback.
+The site is served at the custom domain
+[sococreatorcollective.com](https://sococreatorcollective.com) (set under
+Settings → Pages, DNS at Namecheap), so the workflow builds with base path `/`.
+Deep links like `/creators` work via a `404.html` single-page-app fallback.
 
 To update the creator roster, edit
 [`src/data/mockCreators.ts`](src/data/mockCreators.ts) (read only through
