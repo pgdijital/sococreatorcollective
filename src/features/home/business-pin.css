@@ -1,0 +1,25 @@
+/* Leaflet divIcon markers render outside React, so these classes are global. */
+.business-map-pin {
+  background: transparent;
+  border: none;
+}
+
+.business-map-pin span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+  font-size: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-surface);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast);
+}
+
+.business-map-pin:hover span {
+  transform: scale(1.12);
+  background-color: var(--color-accent-hover);
+}

@@ -1,0 +1,15 @@
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.7rem;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent-hover);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.verified {
+  background-color: #ecdfad; /* soft tint of --color-gold */
+  color: #7c621d;
+}

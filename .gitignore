@@ -1,0 +1,15 @@
+# Dependencies and build output (rebuilt by CI)
+node_modules
+dist
+
+# Local env and editor/OS files
+*.local
+.env
+.DS_Store
+.claude/
+
+# Source material not needed to render the site
+# (web-ready copies of the photos live in public/images/creators)
+Influencers - Sheet3 (2).csv
+profile images/
+MVP of Influencer Platform Prompt "SoCo Creator Collective".md
