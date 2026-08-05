@@ -15,7 +15,7 @@ export function FilterBar({ filters, onChange }: FilterBarProps) {
       <input
         type="search"
         className={styles.search}
-        placeholder="Search creators and handles…"
+        placeholder="Search creators, handles, and regions…"
         aria-label="Search creators"
         value={filters.search}
         onChange={(e) => update({ search: e.target.value })}

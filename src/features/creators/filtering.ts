@@ -29,7 +29,8 @@ export function applyFilters(creators: Creator[], filters: CreatorFilters): Crea
       return false;
     }
     if (search) {
-      const haystack = `${creator.name} ${creator.handle} ${creator.blurb}`.toLowerCase();
+      const haystack =
+        `${creator.name} ${creator.handle} ${creator.region} ${creator.blurb}`.toLowerCase();
       if (!haystack.includes(search)) return false;
     }
     return true;
